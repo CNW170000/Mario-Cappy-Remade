@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Fire2") && isGrounded == false)
         {
             Vector3 dive = transform.forward * diveDistance;
-            controller.Move(dive * 10*speed * Time.deltaTime);
+            controller.Move(dive * 5*speed * Time.deltaTime);
         }
 
         velocity.y += gravity * Time.deltaTime;
